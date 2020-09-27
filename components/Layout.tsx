@@ -18,22 +18,20 @@ const Layout: FunctionComponent<Props> = ({children, title = 'This is the defaul
             <nav>
                 <Link href="/">
                     <a>Home</a>
-                </Link>{' '}
-        |{' '}
+                </Link>
                 <Link href="/about">
                     <a>About</a>
-                </Link>{' '}
-        |{' '}
+                </Link>
                 <Link href="/users">
                     <a>Users List</a>
-                </Link>{' '}
-        | <a href="/api/users">Users API</a>
+                </Link>
+                <a href="/api/users">Users API</a>
             </nav>
         </header>
         {children}
         <footer>
             <hr />
-            <span>I'm here to stay (Footer)</span>
+            <span>{"I'm here to stay (Footer)"}</span>
         </footer>
     </div>
 )
