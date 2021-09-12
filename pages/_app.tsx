@@ -1,7 +1,28 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
+import { Layout } from '../components/Layout';
+import { globalCss, styled } from '../stitches.config';
+
+const globalStyles = globalCss({
+  '*': {
+    margin: 0,
+    padding: 0,
+    boxSizing: 'border-box',
+    fontFamily: '$inter',
+  },
+
+  li: {
+    listStyle: 'none',
+  },
+});
 
 function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  globalStyles();
+
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
-export default App
+
+export default App;

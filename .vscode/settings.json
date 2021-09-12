@@ -1,5 +1,6 @@
 {
-    "git.branchWhitespaceChar": "_",
-    "typescript.tsdk": "node_modules\\typescript\\lib"
-  }
-  
+  "git.branchWhitespaceChar": "_",
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+}
