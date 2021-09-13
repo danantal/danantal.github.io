@@ -14,10 +14,10 @@ const Container = styled('div', {
 const Home: NextPage = () => {
   return (
     <Container>
-      <h1>Hi, I am Dan.</h1>
+      <h1>Hi, I am Dan 👋</h1>
       <Image src={CoderIllustration} alt="Coder" />
       <Card css={{ maxWidth: 480, textAlign: 'center' }}>
-        <h2>Human being. Coder. Consultant.</h2>
+        <h2>Human being. Coder. Amateur Wizard 🧙‍♂️</h2>
         <br />
         <p>
           I portray myself as a web developer, passionate about building slick user interfaces. I
