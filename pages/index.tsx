@@ -8,20 +8,17 @@ const Container = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  '& * + *': {
-    marginTop: 24,
-  },
+  gap: 24,
 });
 
 const Home: NextPage = () => {
   return (
     <Container>
       <h1>Hi, I am Dan.</h1>
-      <div>
-        <Image src={CoderIllustration} alt="Coder" />
-      </div>
+      <Image src={CoderIllustration} alt="Coder" />
       <Card css={{ maxWidth: 480, textAlign: 'center' }}>
         <h2>Human being. Coder. Consultant.</h2>
+        <br />
         <p>
           I portray myself as a web developer, passionate about building slick user interfaces. I
           tend to overstep my duties sometimes, so not your typical consultant. I enjoy interacting
