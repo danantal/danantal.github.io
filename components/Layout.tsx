@@ -6,15 +6,20 @@ const Background = styled('div', {
   minHeight: '100vh',
   display: 'flex',
   flexDirection: 'column',
-  backgroundImage: 'url(./background.svg)',
-  backgroundSize: 'cover',
+});
+
+const Main = styled('main', {
+  display: 'flex',
+  flexDirection: 'column',
+  padding: 32,
+  flexGrow: 999,
 });
 
 export const Layout: FunctionComponent = ({ children }) => {
   return (
     <Background>
       <Menu />
-      <main>{children}</main>
+      <Main>{children}</Main>
     </Background>
   );
 };

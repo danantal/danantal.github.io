@@ -3,11 +3,9 @@ import { css, styled } from '../stitches.config';
 import { Link } from './Link';
 
 const Nav = styled('nav', {
-  position: 'fixed',
-  top: 0,
   display: 'flex',
   width: '100vw',
-  height: '64px',
+  height: 80,
 });
 
 export const Menu = () => {
@@ -16,22 +14,22 @@ export const Menu = () => {
       <ul
         className={css({
           display: 'flex',
-          flex: '1 0 auto',
+          flexGrow: 999,
           alignItems: 'center',
-          padding: '0 16px',
-          justifyContent: 'flex-end',
+          justifyContent: 'center',
           boxShadow: '$10',
-          backgroundColor: '$blue-10',
+          backgroundColor: '$blue-30',
+          letterSpacing: 3,
         })()}
       >
         <li>
-          <Link href="/" size={3}>
-            About
+          <Link href="/" color="light" size={3}>
+            ABOUT ME
           </Link>
         </li>
         <li>
-          <Link href="/contact" size={3}>
-            Contact
+          <Link href="/contact" color="light" size={3}>
+            CONTACT
           </Link>
         </li>
       </ul>
