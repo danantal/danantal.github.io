@@ -1,8 +1,7 @@
 import type { NextPage } from 'next';
-import Image from 'next/image';
 import { styled } from '../stitches.config';
-import CoderIllustration from '../public/coding.svg';
 import { Card } from '../components/Card';
+import { CodingIllustration } from '../components/illustrations';
 
 const Container = styled('div', {
   display: 'flex',
@@ -15,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <Container>
       <h1>Hi, I am Dan 👋</h1>
-      <Image src={CoderIllustration} alt="Coder" />
+      <CodingIllustration />
       <Card css={{ maxWidth: 480, textAlign: 'center' }}>
         <h2>Human being. Coder. Amateur Wizard 🧙‍♂️</h2>
         <br />
