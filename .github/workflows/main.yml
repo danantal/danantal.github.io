@@ -35,3 +35,24 @@ jobs:
           
       - name: Publish files
         run: ls ./out
+        
+      - uses: actions/upload-artifact@v2
+        with:
+          name: static_build
+          path: ./out/
+          
+      - run: git checkout gh-pages
+      
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v2.1.0
+        with:
+          name: static_build
+          path: ./
+        
+      - run: |
+          ls .
+          git status
+          
+      - run: |
+          git commit -am 'Publish new version'
+          git push
