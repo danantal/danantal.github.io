@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import NextLink from 'next/link';
-import { styled } from '../stitches.config';
+import { styled, CSS } from '../stitches.config';
 import { VariantProps } from '@stitches/react';
 
 const LinkInner = styled('a', {
@@ -41,12 +41,15 @@ const LinkInner = styled('a', {
 
 type LinkProps = {
   href: string;
+  css?: CSS;
 } & VariantProps<typeof LinkInner>;
 
-export const Link: FunctionComponent<LinkProps> = ({ href, children, ...variants }) => {
+export const Link: FunctionComponent<LinkProps> = ({ href, children, css, ...variants }) => {
   return (
     <NextLink href={href} passHref>
-      <LinkInner {...variants}>{children}</LinkInner>
+      <LinkInner {...variants} css={css}>
+        {children}
+      </LinkInner>
     </NextLink>
   );
 };

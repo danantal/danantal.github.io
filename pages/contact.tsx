@@ -18,13 +18,22 @@ const Container = styled('div', {
 const Contact = () => {
   return (
     <Container>
-      <Link href="https://github.com/danantal">
+      <Link
+        href="https://github.com/danantal"
+        css={{ flexGrow: 1, minWidth: '$200', maxWidth: '$400' }}
+      >
         <GithubIllustration />
       </Link>
-      <Link href="https://twitter.com/DanAntalRO">
+      <Link
+        href="https://twitter.com/DanAntalRO"
+        css={{ flexGrow: 1, minWidth: '$200', maxWidth: '$400' }}
+      >
         <TwitterIllustration />
       </Link>
-      <Link href="mailto:hello@danantal.me">
+      <Link
+        href="mailto:hello@danantal.me"
+        css={{ flexGrow: 1, minWidth: '$200', maxWidth: '$400' }}
+      >
         <EmailIllustration />
       </Link>
     </Container>
