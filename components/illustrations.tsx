@@ -3,7 +3,7 @@ import { css } from '../stitches.config';
 
 export const CodingIllustration: VoidFunctionComponent = () => {
   return (
-    <svg viewBox="0 0 878.63037 483" className={css({ minWidth: '$500' })()}>
+    <svg viewBox="0 0 878.63037 483" className={css({ minWidth: '$500', maxWidth: '$700' })()}>
       <path
         d="M294.7164,621.20348c-19.51084,14.54436-25.04043,40.13465-25.04043,40.13465s26.10369,2.00928,45.61453-12.53511,25.04043-40.13465,25.04043-40.13465S314.22725,606.65916,294.7164,621.20348Z"
         transform="translate(-160.68481 -208.5)"
